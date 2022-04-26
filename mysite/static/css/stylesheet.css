@@ -1,0 +1,39 @@
+.flex-row-container {
+    background: #28e928;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+		width: 200px;
+		text-align: center;
+		justify-content: center;
+}
+.flex-row-container > .flex-row-item {
+		/*We want a 3 * 3 grid so 100% // 30  = ~3 */
+    flex: 1 1 30%; /*grow | shrink | basis */
+    height: 30px;
+}
+
+.flex-row-container > .flex-row-item-done {
+		/*We want a 3 * 3 grid so 100% // 30  = ~3 */
+    flex: 1 1 30%; /*grow | shrink | basis */
+    height: 30px;
+}
+
+
+.flex-row-item:hover {
+	transition: .5s;
+	background-color: black;
+}
+
+.flex-row-item {
+  background-color: #000065;
+  border: 1px solid #d3d3d3;
+	color: #d3d3d3;
+}
+
+.flex-row-item-done {
+  background-color: #000025;
+  border: 1px solid #d3d3d3;
+	color: #d3d3d3;
+}

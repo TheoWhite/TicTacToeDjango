@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+	<head><link src="my.css" rel="stylesheet">
+	<body style="background-color:black; ">
+		<form method="post" action="/">
+		{% csrf_token %}
+
+			<input type="submit" id="submit-button" style="background-color:white; color:blue;" disabled>
+		</form>
+		<p style="color:white;"> You are X & Your First</p>
+		<div id="board" class="flex-row-container" style="allign:center;"></div>
+		<script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"></script>
+		<script src="{% static 'js/script.js' %}"></script>
+		 <link rel="stylesheet" href="{% static 'css/stylesheet.css'%}" type="text/css">
+	</body>
+	</html>
